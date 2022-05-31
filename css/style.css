@@ -1,0 +1,136 @@
+/* Basic CSS structure */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --bg-color: #FFFFFF;
+    --primary-color: #000000;
+    --second-color: #0D6EFD;
+    --cover-color: #6C757D;
+
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+section h1 span {
+    color: var(--second-color);
+    font-weight: 600;
+    font-size: 4rem;
+    
+}
+
+
+.animate-charcter {
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    var(--bg-color) 0%,
+    var(--cover-color) 29%,
+    var(--second-color) 67%,
+    var(--primary-color) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 4rem;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+a:hover{
+    color: var(--cover-color);
+}
+
+
+.banner {
+    background-color: var(--cover-color) ;
+    background-size: 100%;
+    background-size: cover;
+    
+} 
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 20000;
+    
+    
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--bg-color);
+    font-weight: bold;  
+    
+    
+    
+}
+
+
+.aboutSection {
+    background-color: var(--bg-color);
+}
+
+.img-thumbnail {
+    border: 2px solid var(--second-color);
+
+}
+
+.education {
+    background-color: var(--second-color);
+}
+
+.ciercle {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    align-items: center;
+    display:flex;
+    color: var(--primary-color);        
+}
+
+
+
+.projectContainer {
+    background-color: var(--cover-color);
+}
+
+.contactPage {
+    background-color: #6C757D;
+}
+
+.marginRight{
+
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: var(--second-color);
+}
+
+.row a i {
+    color: var(--bg-color);
+}
