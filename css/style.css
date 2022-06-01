@@ -1,4 +1,4 @@
-/* Basic CSS structure */
+/* Basic CSS structure start*/
 
 * {
     margin: 0;
@@ -27,6 +27,7 @@ section h1 span {
     
 }
 
+/* This is for animation */
 
 .animate-charcter {
    text-transform: uppercase;
